@@ -13,7 +13,7 @@ namespace Test_WindowsFormsApp
     }
     public class DB
     {
-        string _connectionstring = @"Data Source=.;Initial Catalog=Sky_Salar;Integrated Security=True;Pooling=False";
+        string _connectionstring = @"Data Source=.;Initial Catalog=Sky_Cable;Integrated Security=True;Pooling=False";
         //"Data Source=SUDEEP-PC\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\login.mdf;Integrated Security=True";
 
         private SqlConnection myconnection()

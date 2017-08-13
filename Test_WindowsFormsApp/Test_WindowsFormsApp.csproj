@@ -51,7 +51,7 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\Data_Code.cs" />
+    <Compile Include="App_Code\ssssss.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

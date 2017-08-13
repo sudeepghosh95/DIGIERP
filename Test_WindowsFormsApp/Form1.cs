@@ -29,11 +29,27 @@ namespace Test_WindowsFormsApp
 
         private void label13_Click(object sender, EventArgs e)
         {
-
         }
 
+        //Save Button
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string x;
+
+                if (radioButton1.Checked)
+                    x = "M";
+                else
+                    x = "F";
+                DB obj = new DB();
+               // obj.InsertUpdateDelete(String.Format("insert into tbl_Cus_details values ( " + textBox8.Text.ToString() + "," + textBox2.Text.ToString() + "," + textBox6.Text.ToString() + "," + textBox7.Text.ToString() + "," + textBox5.Text.ToString() + "," + textBox10.Text.ToString() + "," + textBox1.Text.ToString() + "," + textBox13.Text.ToString() + "," + textBox14.Text.ToString() + "," + dateTimePicker1.Value.ToShortDateString() + "," + dateTimePicker1.Value.ToShortDateString() + "," + textBox3.Text.ToString() + "," + x.ToString() + ") "));
+                obj.InsertUpdateDelete(String.Format("insert into bill values(" + textBox8.Text.ToString() + "," + textBox9.Text.ToString() + "," + textBox11.Text.ToString() + "," + dateTimePicker1.Value + "," + textBox13.Text.ToString() + "," + textBox14.Text.ToString() + ") "));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -54,6 +70,32 @@ namespace Test_WindowsFormsApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        
+        //Clear Button.
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox1.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox10.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox11.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
