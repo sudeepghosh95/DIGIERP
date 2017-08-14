@@ -14,11 +14,12 @@ namespace Test_WindowsFormsApp
     public class DB
     {
         string _connectionstring = @"Data Source=.;Initial Catalog=Sky_Cable;Integrated Security=True;Pooling=False";
+        string _connectionstring1 = String.Format("Data Source=52.163.221.206;Initial Catalog=Sky_Cable;User Id=sa;Password=Akhilesh@123;");
         //"Data Source=SUDEEP-PC\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\login.mdf;Integrated Security=True";
 
         private SqlConnection myconnection()
         {
-            SqlConnection con = new SqlConnection(_connectionstring);
+            SqlConnection con = new SqlConnection(_connectionstring1);
             return con;
         }
 
