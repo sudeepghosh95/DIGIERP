@@ -44,7 +44,7 @@ namespace Test_WindowsFormsApp
                     x = "F";
                 DB obj = new DB();
                // obj.InsertUpdateDelete(String.Format("insert into tbl_Cus_details values ( " + textBox8.Text.ToString() + "," + textBox2.Text.ToString() + "," + textBox6.Text.ToString() + "," + textBox7.Text.ToString() + "," + textBox5.Text.ToString() + "," + textBox10.Text.ToString() + "," + textBox1.Text.ToString() + "," + textBox13.Text.ToString() + "," + textBox14.Text.ToString() + "," + dateTimePicker1.Value.ToShortDateString() + "," + dateTimePicker1.Value.ToShortDateString() + "," + textBox3.Text.ToString() + "," + x.ToString() + ") "));
-                obj.InsertUpdateDelete(String.Format("insert into bill values(" + textBox8.Text.ToString() + "," + textBox9.Text.ToString() + "," + textBox11.Text.ToString() + "," + dateTimePicker1.Value + "," + textBox13.Text.ToString() + "," + textBox14.Text.ToString() + ") "));
+                obj.InsertUpdateDelete(String.Format("insert into bill (stb_no,vc_no,box_type,deposite,rent) values (" + textBox8.Text.ToString() + "," + textBox9.Text.ToString() + "," + textBox11.Text.ToString() + "," + textBox13.Text.ToString() + "," + textBox14.Text.ToString() + ") "));
             }
             catch(Exception ex)
             {
